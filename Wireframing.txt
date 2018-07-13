@@ -1,0 +1,114 @@
+Wireframing: sketch>mockup>prototype
+
+Wireframes are visual representations of an interface, used to communicate the following details to get everyone on the same page:
+
+• Structure - How will the pieces of this site be put together?
+• Content - What will be displayed on the site?
+• Informational hierarchy - How is this information organized and displayed?
+• Functionality - How will this interface work?
+• Behavior - How does it interact with the user? And how does it behave?
+
+
+TOOLS & MEDIUM
+	Sketching
+	Paper Cutouts
+	Stenciling
+
+	Wireframing Software
+	Graphic Design Software
+	Presentation Software
+
+
+FIDELITY LEVELS
+	Block Diagrams
+	Grey Boxes
+	High-Fidelity Text
+	High-Fidelity Color
+	High-Fidelity Media
+	High-Fidelity Interaction
+
+
+ADITIONAL DETAILS
+	Anotated Wireframes
+		• Functionality: clicks, taps, swipes, zoom, pop-ups, data inputs and outputs, etc.
+		• Content: text, fonts, layout, sizing, linking, graphics, multimedia, dimensions, resolution, etc.
+		• Behavior: animation styles, speed, and positioning, interactions, link destinations, etc.
+		• Key constraints: hardware, software, browser, data, etc.
+	Wireframes With User Flows
+	Interactive & “Click-through”
+
+
+DESIGN PRINCIPLES FOR WIREFRAMING
+
+A few questions that you may want to answer before jumping too far into the details:
+• Who are the core users?
+• What are the user needs and goals?
+• What are the business needs and goals?
+• What existing product or design patterns work for your users and business?
+• What are the gaps in what’s currently out there?
+• What are some product requirements you have given your users needs and goals
+(as well as those of your business?
+• What are your constraints (i.e. time, resources, money, skills)?
+
+Set expectations - not just goals
+	http://firstround.com/article/How-to-Make-OKRs-Actually-Work-at-Your-Startup
+	http://en.wikipedia.org/wiki/SMART_criteria
+
+
+Start with users - and their needs
+	“Who is going to use my product and what will he or she do first?”
+
+	What users ask for is not always what they need
+
+Think how, not what
+	• What is needed for your product to function well?
+	• How much can you take away from it without sacrificing the core product?
+	• Why will people be excited about it?
+
+	Understand when you are working on your core product and when you are working on adding features.
+	Minimum + Viable = Good products for statups to build
+
+Start simple, stay simple
+	"Simplicity is the ultimate for of sophistication" - Leo Da Vinci
+
+Shipped is better than perfect
+	The goal of sketching, wireframing and prototyping is delivering great product concepts, not great deliverables.
+
+//Resources
+uxpin.com
+http://designmodo.com/aesthetics-wireframes-context/
+http://flickr.com/groups/ilovewireframes
+http://wireframeshowcase.com/
+http://wireframes.linowski.ca/tag/wireframe
+http://patterntap.com/
+http://uxarchive.com/
+http://behance.net/search?search=wireframe
+http://dribbble.com/search?q=wireframe
+http://forrst.com/posts?search=wireframe
+http://pinterest.com/search/pins/?q=wireframes
+
+Web Only
+http://ui-patterns.com/patterns
+
+Mobile Only
+http://pttrns.com/
+http://android-app-patterns.com/
+http://inspired-ui.com/
+http://mobile-patterns.com/
+http://moobileframes.tumblr.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

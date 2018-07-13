@@ -1,0 +1,52 @@
+jQuery Statement
+	selector action  parameters
+	$('p')	.css	('color', 'blue');
+	$("li:first")
+
+The DOM
+	
+Listener
+	jQuery(document).ready(function(){
+	<code>
+	});
+
+Traversing
+	selection			traversal
+	$("#destinations").find("li");
+	$("#destinations").children("li");
+	$("li").first();
+	.next();
+	.parent();
+
+Events
+	.on(<event>, <event handler>)
+	$('button').on('click',function(){
+	});
+
+Appending to the DOM
+	.append(<element>)
+	.prepend(<element>)
+	.after(<element>)
+	.before(<element>)
+
+	.closest(<element>)
+
+Mouse Events
+	click
+	mousedown
+	...
+
+Keyboard Events
+	keypress
+	keydown
+	keyup
+
+Form Events
+	blur
+	select
+	focus
+	submit
+	change
+
+CSS
+	toggleclass

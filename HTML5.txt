@@ -1,0 +1,100 @@
+HTML5
+
+What is HTML5
+Support
+	findmebyip.com
+	caniuse.com
+	statcounter.com
+Basic Template
+	Doctype
+	Character Encoding
+	New Structural Tags
+		section
+		article
+		aside
+		header
+		hgroup
+		footer
+		nav
+	New Content Tags
+		figure & figcaption
+		mark
+		video
+		audio
+		embed
+		canvas
+	New application-focused Tags
+		meter
+		progress
+		time
+		details
+		command
+		menu
+	Deprecated Tags
+
+	Outline Algoritm
+		Sectioning Elements
+			article, aside, section, nav, h1 - h6
+		Checking Document Outlines
+			HTML5 Outliner
+			h5o
+
+FORMS
+	New Form Attributes
+		autofocus
+		required
+		placeholder
+		disabled
+		readonly
+		multiple
+		form
+		datalist
+		autocomplete
+	New Form Input Types
+		search
+		url
+		tel
+		email
+		number
+		range
+		color
+		time
+		month
+		week
+		datetime
+		date
+		datetime-local
+
+
+	Integrated APIs
+		Video
+			Encoing
+				videojs.com
+				webmproject.org
+				firefogg.ogg
+				handbrake.fr
+
+		Audio
+
+
+	Associated APIs
+		Geolocation
+		Messaging
+		 	Web Sockets
+		Offline Apps
+			manifesto
+		Web Storage
+			jstorage.info
+		Editable
+		Canvas
+		SVG
+			http://inkscape.org/
+		Drag & Drop
+
+	Accesibility
+		WAI-ARIA
+	Microdata
+
+Appendix
+	HTML5 Validation
+		http://lint.brihten.com/html/

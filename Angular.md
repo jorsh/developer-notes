@@ -183,7 +183,7 @@ Allow us to specify a CSS class to add to a DOM element if a component property 
 ```
 <div [class.name] = "property"></div>
 ```
-
+*
 ### Event Binding
 Allows us to listen to any DOM event and call a component method when it's triggered.
 ```
@@ -421,9 +421,9 @@ Useful to manage asynchronous data. Treat events as a collection.
 - They process each value as soon as it is emitted
 
 ### Promise vs Observable
-|Promise| Observable|
-|-------|-----------|
-|Provides a single future value| Emits multiple values over time|
-|Not lazy| Lazy|
-|Not cancellable| Cancellable|
-|-|Supports map, filter, reduce and similar operators|
+| Promise                        | Observable                                         |
+| ------------------------------ | -------------------------------------------------- |
+| Provides a single future value | Emits multiple values over time                    |
+| Not lazy                       | Lazy                                               |
+| Not cancellable                | Cancellable                                        |
+| -                              | Supports map, filter, reduce and similar operators |

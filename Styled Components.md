@@ -101,7 +101,7 @@ render(
 ```
 
 
-## Amimations
+## Animations
 
 `keyframes` helper will generate a unique name for your keyframes. You can then use that unique name throughout your app.
 

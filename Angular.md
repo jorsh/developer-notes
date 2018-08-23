@@ -1,7 +1,13 @@
 # Angular 2
 
+# Features and Benefits
+- Cross Platform: PWA, Native (Ionic, NativeScript), Desktop
+- Speed and Performance: Code Generation, Universal (server-side rendering), Code Splitting (through Component Router)
+- Productivity: Templates, AngularCLI, IDEs (IntelliSense)
+- Full Development Story: Testing (Karma & Protractor), Animation, Accesibility
+
 ## Modules
-An Angular module is a class with an NgModule decorator.
+An Angular module is a class with an NgModule decorator. NgModules provide a compilation context for their components.
 
 Its purpose:
 - Organize the pieces of our application
@@ -19,14 +25,17 @@ Its most important properties:
 
 Example of a module:
 ```typescript
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
 @NgModule({
-  imports: [BrowserModule, AppRoutingModule],
-  exports: [MyModule],
-  declarations: [AppComponent, OtherComponents],
-  providers: [HeroService],
-  bootstrap: [AppComponent]
+  imports:      [ BrowserModule ],
+  providers:    [ Logger ],
+  declarations: [ AppComponent ],
+  exports:      [ AppComponent ],
+  bootstrap:    [ AppComponent ]
 })
-export class AppModule {}
+export class AppModule { }
 ```
 
 
@@ -62,8 +71,12 @@ export class AppModule {}
 ## Decorators
 Decorators are what turn our plain TypeScript classes into Components
 
+
+
+
 ## Components
-Basic building blocks of any Angular application.
+A `component` controls a patch of screen called a `view`. Basic building blocks of any Angular application.
+
 ```typescript
 @Component({
 	selector: 'my-app',
@@ -77,6 +90,7 @@ export class AppComponent {}
 
 *Note: If it is the main component the exported class should be called AppComponent*
 
+*Angular creates, updates, and destroys components as the user moves through the application. Your app can take action at each moment in this lifecycle through optional lifecycle hooks, like ngOnInit().*
 
 ## Directives
 A directive is how we add dynamic behavior to HTML.
@@ -202,13 +216,17 @@ Services are used to organize and share code across the app, and they're usually
 
 *Note*: Use PascalCasing for naming services
 
-1. Add the Injectable decorator
+There are three ways to provide a service.
+
+1. On the Injectable decorator using `provideIn: 'root'` to make it available across the app.
 ```typescript
-@Injectable
-export class MyService {
-    myMethod() {
-        return RESPONSE;
-    }
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class HeroService {
+  constructor() { }
 }
 ```
 
@@ -228,17 +246,59 @@ export class MyComponent {
     constructor(private myService:  MyService) {}
 }
 ```
+
+
 ## Interface
 - A **specification** identifying a related set of properties and methods.
 - A class commits to supporting the specification by **implementing** interface.
 - Use the interface as **data type**
 
 ## Lifecycle Hooks
-Angular creates it, renders it, creates and renders its children, checks it when its data-bound properties change, and destroys it before removing it from the DOM.
+https://angular.io/guide/lifecycle-hooks
 
-- `OnInit`: Perform component initialization, retrieve data.
-- `OnChanges`: Perform action after changes to input properties.
-- `OnDestroy`: Perform cleanup.
+A component has a lifecycle managed by Angular.
+Angular offers lifecycle hooks that provide visibility into these key life moments and the ability to act when they occur.
+
+*No directive or component will implement all of the lifecycle hooks. Angular only calls a directive/component hook method if it is defined.*
+
+
+### Lifecycle sequence
+After creating a component/directive by calling its constructor, Angular calls the lifecycle hook methods in the following sequence at specific moments:
+
+
+#### Hook, Purpose and Timing
+- ngOnChanges()	
+    - Respond when Angular (re)sets data-bound input properties. The method receives a SimpleChanges object of current and previous property values.
+        - Called before ngOnInit() and whenever one or more data-bound input properties change.
+
+- ngOnInit()	
+    - Initialize the directive/component after Angular first displays the data-bound properties and sets the directive/component's input properties.
+        - Called once, after the first ngOnChanges().
+
+- ngDoCheck()	
+    - Detect and act upon changes that Angular can't or won't detect on its own.
+        - Called during every change detection run, immediately after ngOnChanges() and ngOnInit().
+
+- ngAfterContentInit()	
+    - Respond after Angular projects external content into the component's view / the view that a directive is in.
+        - Called once after the first ngDoCheck().
+
+- ngAfterContentChecked()	
+    - Respond after Angular checks the content projected into the directive/component.
+        - Called after the ngAfterContentInit() and every subsequent ngDoCheck().
+
+- ngAfterViewInit()	
+    - Respond after Angular initializes the component's views and child views / the view that a directive is in.
+        - Called once after the first ngAfterContentChecked().
+
+- ngAfterViewChecked()	
+    - Respond after Angular checks the component's views and child views / the view that a directive is in.
+        - Called after the ngAfterViewInit and every subsequent ngAfterContentChecked().
+
+- ngOnDestroy()	
+    - Cleanup just before Angular destroys the directive/component. Unsubscribe Observables and detach event handlers to avoid memory leaks.
+        - Called just before Angular destroys the directive/component.
+
 
 ```typescript
 import {Component, OnInit} from '@angular/core';
@@ -412,7 +472,7 @@ import {DetailGuard} from './detail-guard.service';
     })
 ````
 
-## Observables
+## Observables & RxJS
 Useful to manage asynchronous data. Treat events as a collection.
 
 ### Operators
@@ -427,3 +487,8 @@ Useful to manage asynchronous data. Treat events as a collection.
 | Not lazy                       | Lazy                                               |
 | Not cancellable                | Cancellable                                        |
 | -                              | Supports map, filter, reduce and similar operators |
+
+
+### The RxJS library
+Reactive programming is an asynchronous programming paradigm concerned with data streams and the propagation of change.
+RxJS is a library for reactive programming using observables that makes it easier to compose asynchronous or callback-based code.

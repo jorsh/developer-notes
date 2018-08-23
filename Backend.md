@@ -38,6 +38,14 @@
 
 ### NodeJS
 - npm
+- socket.io
+- Node Libraries
+	- Forever
+	- Underscore
+	- Supervisor
+	- Node Inspector
+	- Swig
+	- Connect-Redis
 
 ### Phyton
 - pip

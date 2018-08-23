@@ -1,0 +1,5 @@
+- Reliable
+- Robust
+- Authentication
+- Confidentiality
+- Integrit

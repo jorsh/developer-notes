@@ -1,3 +1,52 @@
+- [React](#react)
+  - [Hello World](#hello-world)
+  - [JSX](#jsx)
+  - [Elements](#elements)
+  - [Components](#components)
+    - [Functional Components](#functional-components)
+      - [9 Benefits of Stateless Functional Components](#9-benefits-of-stateless-functional-components)
+    - [Class Components](#class-components)
+    - [Props are Read-Only](#props-are-read-only)
+    - [propTypes](#proptypes)
+      - [Custom propType validation](#custom-proptype-validation)
+    - [defaultProps](#defaultprops)
+    - [Access nested data with props.children](#access-nested-data-with-propschildren)
+    - [Rendering a Component](#rendering-a-component)
+    - [Composition and Extraction](#composition-and-extraction)
+    - [Container vs Presentation Components](#container-vs-presentation-components)
+    - [Other APIs](#other-apis)
+    - [Class Properties](#class-properties)
+    - [Instance Properties](#instance-properties)
+  - [State](#state)
+    - [Adding Local State to a Class](#adding-local-state-to-a-class)
+    - [Seting State](#seting-state)
+      - [Do Not Modify State Directly](#do-not-modify-state-directly)
+      - [State Updates May Be Asynchronous](#state-updates-may-be-asynchronous)
+      - [State Updates are Merged](#state-updates-are-merged)
+  - [Lifecycle](#lifecycle)
+    - [Mounting](#mounting)
+    - [Updating](#updating)
+    - [Unmounting](#unmounting)
+  - [Handling Events](#handling-events)
+  - [Conditional Rendering](#conditional-rendering)
+    - [Inline if with logical && operator](#inline-if-with-logical--operator)
+    - [Inline if-else with ternary operator](#inline-if-else-with-ternary-operator)
+    - [Preventing from rendering](#preventing-from-rendering)
+  - [Lists and Keys](#lists-and-keys)
+    - [Keys](#keys)
+  - [Forms](#forms)
+  - [React Top-Level API](#react-top-level-api)
+  - [React Router](#react-router)
+    - [Basic](#basic)
+    - [Nesting](#nesting)
+    - [URL params](#url-params)
+    - [Link](#link)
+    - [Other config](#other-config)
+  - [Axios](#axios)
+  - [Questions](#questions)
+  - [Resources](#resources)
+
+
 # React
 ## Hello World
 ```javascript
@@ -69,12 +118,12 @@ class Welcome extends React.Component {
 ```
 The above two components are equivalent from React's point of view.
 
-| Class Components | Stateless Components|
-|---|---|
-|State| Everywhere else |
-| Refs |  |
-| Lifecycle methods |  |
-| Child functions |  |
+| Class Components  | Stateless Components |
+| ----------------- | -------------------- |
+| State             | Everywhere else      |
+| Refs              |                      |
+| Lifecycle methods |                      |
+| Child functions   |                      |
 
 ### Props are Read-Only
 Props are useful for passing data from one component to another child component. props are to components what arguments are to functions.
@@ -171,12 +220,12 @@ function Comment(props) {
 - Container components, aka: Smart, Stateful, Controller view
 - Presentational, aka: Dumb, Stateless, View
 
-| Container | Presentation|
-|---|---|
-| Little to no markup| Nearly all markup |
+| Container                  | Presentation                       |
+| -------------------------- | ---------------------------------- |
+| Little to no markup        | Nearly all markup                  |
 | Pass data and actions down | Receive data and actions via props |
-| Knows about Redux | Doesn't know about Redux |
-| Often stateful | Typical functional components |
+| Knows about Redux          | Doesn't know about Redux           |
+| Often stateful             | Typical functional components      |
 
 
 ### Other APIs

@@ -1,6 +1,0 @@
-Directives
-Data Binding
-Filters
-Modules
-Routes
-Controllers

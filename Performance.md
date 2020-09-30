@@ -1,5 +1,27 @@
 # Web Performance
 
+- Minify, Compress, Cache 
+- Render blocking css
+
+
+render blocking vs parser blocking
+## CRP Metrics
+Reduce the number of critical KB
+Reduce the number of critical resources
+Reduce the critical path length (number of roundtrips)
+
+
+
+
+
+
+
+
+
+
+## Notes from the Course Perceived Performance
+https://www.oreilly.com/library/view/perceived-performance-the/9781492029953/
+
 ## Image Optimization
 
 - Choose the right formats
